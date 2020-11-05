@@ -1,0 +1,37 @@
+:root{
+  --input-width:616px;
+  --input-height: 65px;
+}
+#input{
+  position: fixed;
+  width: var(--input-width);
+  left: calc(50% - var(--input-width) / 2);
+  transition: top 1s, opacity 1s; 
+}
+.centro{
+  position: fixed;
+  top: calc(50% - var(--input-height) - 55px);
+  opacity: 1;
+}
+.arriba{
+  position: fixed;
+  top: calc(  0% - var(--input-height) * 2 );
+  opacity: 0;
+}
+.enunciado{
+  font-size: 35px;
+  text-align: center;
+  font-family: sansserif;
+  margin-bottom: 5px;
+  color: rgb(220,30,90);
+}
+#input input{
+  background: rgba(255,255,255,0.3);
+  font-size: var(--input-height);
+  width:96%;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+  text-align: center;
+  color: rgb(220,30,90);
+}
